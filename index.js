@@ -1,22 +1,24 @@
-import fs from 'fs';
-import Collection from 'postman-collection';
+import express from 'express'
+import morgan from 'morgan'
 
+const app = express();
 
-let filename = 'sample-test.collection.json'
-let file1 = fs.readFileSync(filename).toString()
-let jsonData = JSON.parse(file1)
+app.use(
+  morgan(
+    "[:date[iso]] Started :method :url for :remote-addr",
+    {
+      immediate: true
+    }
+  )
+)
 
-// console.debug(jsonData)
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-let collection1 = new Collection.Collection(jsonData);
+app.all("/", (req, res) => {
+  res.json({ "message": "server is running" })
+})
 
-// log items at root level of the collection
-// console.log(collection1)
+app.listen(80, () => console.log("server has started on " + 80))
 
-
-let collectionName = collection1.name
-let requests = []
-let {variables} = collection1
-
-
-console.log(variables)
+export default app
