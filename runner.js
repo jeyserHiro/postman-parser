@@ -18,8 +18,9 @@ filename = 'v2.1.json'
 filename = 'testv2.1.json'
 
 
-    
 while (true) {
+  console.log('started runner')
+  
   newman.run({
     collection: filename,
     reporters: 'cli', //['htmlextra', 'csv','cli'],
@@ -33,4 +34,5 @@ while (true) {
     if (err) { throw err; }
     console.log('collection run complete!')
   })
+  console.log('completed running')
 }
