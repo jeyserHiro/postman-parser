@@ -27,9 +27,15 @@ filename = 'testv2.1.json' //google
 filename = 'postman-parser.json'
 
 console.log('started runner')
-  
+
+//refer readmen https://github.com/postmanlabs/newman
 newman.run({
-  collection: filename,
+  collection: filename, //object or string
+  // environment:'',//export env path or object  
+  // globals:{},
+  // envVar:{} //arr or object override or pass enviroment variables 
+  // timeoutRequest:5000, 
+  timeoutScript:4000, //between req
   reporters: 'cli', //['htmlextra', 'csv','cli'],
   iterationCount: 10,
   color: true, 
