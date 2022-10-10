@@ -15,31 +15,31 @@ import HttpProxyAgent from 'http-proxy-agent'
 // let requestAgent = new SocksProxyAgent({ hostname: 'localhost', port: '4003' });
 // let httpsAgent = new SocksProxyAgent('socks5://localhost:4003');
 
-import {proxyPort} from './index.js'
 
+let proxyPort = 4003
 let proxyUrl = `http://localhost:${proxyPort}`
 let requestAgent = new HttpProxyAgent(proxyUrl)
 
-// let filename = 'sample-test.collection.json'
-// filename = 'Hypertest-Application.postman_collection.json'
-// filename = 'v2.1.json'
-// filename = 'testv2.1.json' //google 
-// filename = 'postman-parser.json'
+let filename = 'sample-test.collection.json'
+filename = 'Hypertest-Application.postman_collection.json'
+filename = 'v2.1.json'
+filename = 'testv2.1.json' //google 
+filename = 'postman-parser.json'
 
-// console.log('started runner')
+console.log('started runner')
   
-// newman.run({
-//   collection: filename,
-//   reporters: 'cli', //['htmlextra', 'csv','cli'],
-//   iterationCount: 10,
-//   color: true, 
-//   requestAgents: {
-//     http: requestAgent, // agent used for HTTP requests
-//     https: requestAgent, // agent used for HTTPS requests
-//   }
-// }, (err) => {
-//   if (err) { throw err; }
-//   console.log('collection run complete!')
-// })
-// console.log('end')
+newman.run({
+  collection: filename,
+  reporters: 'cli', //['htmlextra', 'csv','cli'],
+  iterationCount: 10,
+  color: true, 
+  requestAgents: {
+    http: requestAgent, // agent used for HTTP requests
+    https: requestAgent, // agent used for HTTPS requests
+  }
+}, (err) => {
+  if (err) { throw err; }
+  console.log('collection run complete!')
+})
+console.log('end')
 
