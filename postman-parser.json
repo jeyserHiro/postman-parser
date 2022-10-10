@@ -1,21 +1,24 @@
 {
 	"info": {
-		"_postman_id": "9f9a7c6d-2073-465c-95c7-264562a5031d",
+		"_postman_id": "0287a838-befb-40b7-bf99-5f10e405939d",
 		"name": "Postman Parser",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "22361453"
 	},
 	"item": [
 		{
-			"name": "postman-parser",
+			"name": "Home",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
 					"raw": "https://postman-parser.jeyserhiro.repl.co",
+					"protocol": "https",
 					"host": [
-						"www",
-						"postman-parser.jeyserhiro.repl.co",
+						"postman-parser",
+						"jeyserhiro",
+						"repl",
+						"co"
 					]
 				}
 			},

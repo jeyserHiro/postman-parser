@@ -1,6 +1,14 @@
 import express from 'express'
 import morgan from 'morgan'
 
+import httpProxy from 'http-proxy'
+
+export const  proxyPort = 4003
+let url = `http://localhost:80`
+httpProxy.createProxyServer({target:url}).listen(proxyPort)
+
+console.debug('proxy created @ ',proxyPort)
+
 const app = express();
 
 app.use(
