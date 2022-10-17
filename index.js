@@ -29,7 +29,7 @@ httpProxy.createServer(
     },
    target:url
   }
-}).listen(proxyPort);
+).listen(proxyPort);
 
 console.debug('proxy created @ ',proxyPort)
 
