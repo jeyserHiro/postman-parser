@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "0287a838-befb-40b7-bf99-5f10e405939d",
+		"name": "Postman Parser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22361453"
+	},
+	"item": [
+		{
+			"name": "Testing",
+			"item": [
+				{
+					"name": "Google",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "www.google.com",
+							"host": [
+								"www",
+								"google",
+								"com"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bearer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "secretkey",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://postman-parser.jeyserhiro.repl.co",
+							"protocol": "https",
+							"host": [
+								"postman-parser",
+								"jeyserhiro",
+								"repl",
+								"co"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://postman-parser.jeyserhiro.repl.co",
+					"protocol": "https",
+					"host": [
+						"postman-parser",
+						"jeyserhiro",
+						"repl",
+						"co"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
