@@ -1,6 +1,5 @@
-import fs from 'fs';
-import Collection from 'postman-collection';
-
+import fs from 'fs'
+import Collection from 'postman-collection'
 
 /**
  * @typedef {parseCollection}
@@ -16,24 +15,21 @@ import Collection from 'postman-collection';
  * @returns {Object}
  */
 export default function parseCollection(file) {
+  let data = fs.readFileSync(file)
 
-    let data = fs.readFileSync(file)
+  let jsonData = JSON.parse(data)
 
-    let jsonData = JSON.parse(data)
-
-    const myCollection = new Collection.Collection(jsonData);
-    return myCollection
+  const myCollection = new Collection.Collection(jsonData)
+  return myCollection
 }
-
 
 // log items at root level of the collection
 // console.log(collection1)
 
 function main() {
-
-    let filename = 'postman-parser.json'
-    const myCollection = parseCollection(filename)
-    console.log(myCollection)
+  let filename = 'postman-parser.json'
+  const myCollection = parseCollection(filename)
+  console.log(myCollection)
 }
 
 // main()

@@ -72,6 +72,11 @@
     "@jridgewell/resolve-uri" "3.1.0"
     "@jridgewell/sourcemap-codec" "1.4.14"
 
+"@nodeguy/channel@^1.0.2":
+  "integrity" "sha512-ljUGxFKwMy1mxo+Y8tGBzanRGHQTK2qnL2hReugCTdJlGm6Ew/I4Ujz1wAztk/2XCgvt1AoiqziQ5sETYOsGyA=="
+  "resolved" "https://registry.npmjs.org/@nodeguy/channel/-/channel-1.0.2.tgz"
+  "version" "1.0.2"
+
 "@postman/form-data@~3.1.1":
   "integrity" "sha512-vjh8Q2a8S6UCm/KKs31XFJqEEgmbjBmpPNVV2eVav6905wyFAwaUOBGA1NPBI4ERH9MMZc6w0umFgM6WbEPMdg=="
   "resolved" "https://registry.npmjs.org/@postman/form-data/-/form-data-3.1.1.tgz"
@@ -1373,6 +1378,11 @@
   "integrity" "sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw=="
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
+
+"fsevents@~2.3.2":
+  "integrity" "sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.2.tgz"
+  "version" "2.3.2"
 
 "function-bind@^1.1.1":
   "integrity" "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A=="
@@ -2821,7 +2831,7 @@
     "teleport-javascript" "1.0.0"
     "uvm" "2.0.2"
 
-"postman-url-encoder@3.0.5":
+"postman-url-encoder@^3.0.5", "postman-url-encoder@3.0.5":
   "integrity" "sha512-jOrdVvzUXBC7C+9gkIkpDJ3HIxOHTIqjpQ4C1EMt1ZGeMvSEpbFCKq23DEfgsj46vMnDgyQf+1ZLp2Wm+bKSsA=="
   "resolved" "https://registry.npmjs.org/postman-url-encoder/-/postman-url-encoder-3.0.5.tgz"
   "version" "3.0.5"
